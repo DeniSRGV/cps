@@ -5,13 +5,14 @@
     margin: 0
 
 html
-    box-sizing: border-box
+    box-sizing: border-box !important
 
-::before, *::after
+::before, ::after
     box-sizing: inherit
 a
     text-decoration: none
 .body
+    position: relative
     min-width: 320px
 
 .container
@@ -76,11 +77,11 @@ a
             top: 50%
             transform: translate(-50%, -50%)
 
-    &__logo
-        max-width: 96px
-        max-height: 50px
-        img
-            width: 100%
+.logo
+    max-width: 96px
+    max-height: 50px
+    img
+        width: 100%
 
 .services
     min-height: 509px
@@ -250,3 +251,85 @@ a
             &-img img
                 height: 307px
                 width: 531px
+// mobile menu
+.menu
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 320px
+    height: 1024px
+    background: #FFFFFF
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
+    .container
+        position: relative
+        padding: 18px 24px 32px
+        height: 100%
+        box-sizing: border-box
+    &__item:first-child
+        margin-right: 16px
+    .logo
+        transform: translateX(-40px)
+    &__items
+        width: 152px
+
+    &__list
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: 50px
+        list-style: none
+        height: 468px
+        &-item
+            a
+                font-weight: 500
+                font-size: 16px
+                line-height: 24px
+                color: #1B1C21
+                opacity: 1
+                transition-duration: 0.5s
+            a:hover,
+            a:focus
+                opacity: 0.8
+                color: #7E7E82
+            &_active
+                a
+                    color: #7E7E82
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: -24px
+                        top: 50%
+                        transform: translateY(-50%)
+                        background: #41F6D7
+                        width: 4px
+                        height: 32px
+                        border-radius: 0 30% 30% 0
+    &__email
+        margin: 16px 0 12px
+        a
+            color: #1B1C21
+            font-size: 16px
+            line-height: 24px
+            font-weight: 500
+    &__phone a
+        font-size: 24px
+        line-height: 32px
+        font-weight: 700
+        color: #1B1C21
+    &__languages
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        width: 88px
+    &__language
+        color: #1B1C21
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+        &_active
+            color: #7E7E82
+
+    &__block-bottom
+        position: absolute
+        bottom: 32px
