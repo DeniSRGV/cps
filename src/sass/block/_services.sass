@@ -1,0 +1,65 @@
+.services
+    min-height: 509px
+    background: #F8F8F8
+    padding: 24px 0 0 0
+    position: relative
+    h1
+        font-size: 28px
+        line-height: 40px
+        text-align: left
+        font-weight: 700
+        margin-bottom: 24px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            background: #41F6D7
+            width: 3px
+            height: 40px
+            font-size: 28px
+            border-radius: 0 30% 30% 0
+
+    &__descr
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 24px
+        &-field
+            position: relative
+        &-text
+            color: $black
+            max-height: 98px
+            font-weight: 400
+            overflow: hidden
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+        &-further
+            position: relative
+            margin-top: 18px
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: $black
+            margin-left: 32px
+            span
+                display: block
+                position: absolute
+                left: -16px
+                top: 50%
+                transform: translateY(-50%)
+                background-image: url("../img/arrow.svg")
+                background-repeat: no-repeat
+                width: 8px
+                height: 12px
+
+        &-img
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 100%
+            max-width: 320px
+            margin-top: 25px
+            img
+                width: 100%

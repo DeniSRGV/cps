@@ -1,0 +1,98 @@
+//feedback
+.modal
+    &__overlay
+        display: none
+    .container_modal
+        position: relative
+        padding: 24px 16px 0
+        width: 100%
+    &__feedback
+
+        z-index: 70
+        position: absolute
+        right: 0
+        height: 676px
+        display: flex
+        width: 320px
+        flex-direction: column
+        background-color: $white
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
+    &__close
+
+        font-size: 43px
+        width: 40px
+        height: 40px
+        background-color: #FF3E79
+        border-radius: 20px
+        line-height: 40px
+        text-align: center
+        color: $white
+        border: none !important
+        &:hover
+            cursor: pointer
+
+    &__subtitle
+        color: $black
+        font-size: 24px
+        line-height: 32px
+        margin: 40px 0 24px
+        font-weight: 700
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            background: #41F6D7
+
+            width: 3px
+            height: 38px
+            font-size: 28px
+            border-radius: 0 30% 30% 0
+    &__descr
+        font-size: 14px
+        line-height: 16px
+        font-weight: 500
+        color: $gray
+        a
+            color: $pink
+    &__send
+        position: absolute
+        border: none
+        bottom: -117px
+        right: 0
+        width: 136px
+        font-weight: 700
+        &:hover
+            transform: scale(1.1)
+            transition: 0.3s all
+            box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.7)
+
+.feed-form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 310px
+    position: relative
+    input, textarea
+        width: 100%
+        color: #B5B6BC !important
+        -webkit-text-fill-color: #B5B6BC
+        border: 1px solid #EAEAEA
+        border-radius: 8px
+        margin-bottom: 16px
+        background-color: $white
+        height: 48px
+        padding: 12px 16px
+        font-size: 16px
+        line-height: 24px
+        font-weight: 500
+
+    textarea
+        box-sizing: border-box
+        resize: vertical
+        height: 118px
+        width: auto
+//callback
+.modal__callback
+    .feed-form
+        height: 49px
+        margin-bottom: 16px

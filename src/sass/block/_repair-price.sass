@@ -1,0 +1,76 @@
+.repair-price
+    min-height: 468px
+    .repair__brands
+        margin-top: 32px
+    .swiper-slide
+        height: 200px
+        width: 260px
+    .repair__swiper-item
+        padding: 16px 16px
+        display: flex
+        flex-direction: column
+        &__subtitle
+            font-weight: 500
+            color: $gray
+            font-size: 14px
+            line-height: 16px
+            margin-bottom: 4px
+        &__descr,
+        &__money
+            font-size: 14px
+            line-height: 18px
+            color: $black
+            margin-bottom: 16px
+        &__date
+            font-size: 14px
+            line-height: 18px
+
+    &__text
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        color: $black
+    &__offer
+        margin-top: 10px
+        max-width: 192px
+        a
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: $black
+    &__wrapper
+        display: none
+    &__btn
+        top: auto
+        bottom: 16px
+        transform: none
+        width: 119px !important
+        height: 32px !important
+        border-radius: 16px !important
+        &:hover
+            transform: scale(1.1)
+            transition: 0.3s all
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7)
+.order
+
+    text-align: center
+    color: $white
+    font-size: 12px
+    line-height: 32px
+    text-transform: uppercase
+    background-image: none
+    background-color: $pink
+    width: 119px
+    height: 32px
+    border-radius: 16px
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 11px
+        transform: translateY(-50%)
+        background-image: url('../img/brands/go_mini.svg')
+
+        background-repeat: no-repeat
+        width: 7px
+        height: 10px

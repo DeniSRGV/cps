@@ -1,0 +1,42 @@
+$pink: #FF3E79
+$gray: #7E7E82
+$black: #1B1C21
+$white: #FFFFFF
+*
+    font-family: 'TT Lakes', sans-serif
+    padding: 0
+    margin: 0
+
+@import "fonts.css"
+
+html, div, input
+    box-sizing: border-box
+
+    &::before,
+    &::after
+        box-sizing: inherit
+
+a
+    text-decoration: none
+    color: inherit
+.body
+    position: relative
+    min-width: 320px
+
+.container
+    padding: 0 16px
+    margin: 0 auto
+    box-sizing: border-box
+
+@import "block/header"
+@import 'block/services'
+@import 'block/slider'
+@import 'block/menu'
+@import 'block/repair'
+@import 'block/repair-kind'
+@import 'block/repair-price'
+@import 'block/footer'
+@import 'block/animate'
+@import 'block/modals'
+
+@import 'block/media'
